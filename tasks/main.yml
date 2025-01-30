@@ -2,14 +2,13 @@
 ---
 # tasks file for vector-role
 hosts: vector
-pre_tasks:
   - name: Vector | Install prerequisites for Ansible to install .deb via apt module
     # install packages for install .deb
     become: true
     ansible.builtin.apt:
       name:
         - xz-utils
-tasks:
+
   - name: Vector | Install vector packages
     become: true
     ansible.builtin.apt:
