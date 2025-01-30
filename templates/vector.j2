@@ -11,6 +11,6 @@ sinks:
       - syslog
     compression: none
     database: logs
-    endpoint: http://{{ lighthouse_host }}:8123
+    endpoint: http://{{ clickhouse_host }}:8123
     format: json_each_row
     table: access_logs
