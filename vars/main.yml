@@ -2,3 +2,7 @@
 ---
 # vars file for vector-role
 lighthouse_host: "lighthouse"
+
+vector_version: "latest"
+vector_packages:
+  - vector
