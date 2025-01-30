@@ -19,9 +19,9 @@ hosts: vector
     # Render and upload vector simple config for work with clickhouse
     become: true
     ansible.builtin.template:
-      src: ./templates/vector.j2
+      src: vector.j2
       dest: /etc/vector/vector.yaml
-      mode: "0444"
+      mode: "0666"
       owner: "{{ ansible_user }}"
     notify:
       - Vector | Restart vector service
