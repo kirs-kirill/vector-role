@@ -5,3 +5,7 @@ vector_version: "latest"
 vector_packages:
   - vector
 clickhouse_host: "127.0.0.1"
+clickhouse_port: "8123"
+clickhouse_db: "logs"
+db_table: "access_logs"
+src: "/var/log/auth.log"
