@@ -4,3 +4,4 @@
 vector_version: "latest"
 vector_packages:
   - vector
+clickhouse_host: "127.0.0.1"
